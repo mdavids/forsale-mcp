@@ -6,12 +6,12 @@ curl -s https://forsalereg.sidnlabs.nl/health
 echo "# Initialize (MCP handshake)"
 curl -s -X POST https://forsalereg.sidnlabs.nl/mcp \
   -H "Content-Type: application/json" \
-  -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}'
+  -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}' | jq .
 
 echo "# Succesful initialize handshake confirmed
 curl -s -X POST https://forsalereg.sidnlabs.nl/mcp \
   -H "Content-Type: application/json" \
-  -d '{"jsonrpc":"2.0","method":"notifications/initialized"}'
+  -d '{"jsonrpc":"2.0","method":"notifications/initialized"}' | jq .
 
 echo "# Tools opvragen"  
 curl -s -X POST https://forsalereg.sidnlabs.nl/mcp \
