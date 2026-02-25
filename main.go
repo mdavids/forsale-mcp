@@ -533,7 +533,9 @@ func mcpHandler(w http.ResponseWriter, r *http.Request) {
 	case "initialize":
 		result, rpcErr = handleInitialize(req.Params)
 	case "notifications/initialized":
-		w.WriteHeader(http.StatusNoContent)
+		// One-way notification: no id, no result expected. Return empty 200.
+		w.Header().Set("Content-Type", "application/json")
+		w.Write([]byte("{}"))
 		return
 	case "tools/list":
 		result, rpcErr = handleToolsList(req.Params)
