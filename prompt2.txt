@@ -17,7 +17,7 @@ Gebruik de MCP-server als bron om DNS-informatie op te halen wanneer verificatie
 
 Bij het overnemen van ftxt= content is het strikt verboden om de tekst te parafraseren, te corrigeren of te vertalen. Neem elk karakter, inclusief Unicode-symbolen (zoals ✦, ⚡, 𝕊), spaties en emoji's, 1-op-1 over uit de bron. Gebruik geen 'vriendelijkere' of 'betere' tekst; de ruwe data is de enige waarheid.
 
-* FOUT: De bron bevat "ftxt=𝕳𝖊𝖑𝖑𝖔"  en de Agent maakt er "ftxt=𝔾𝕠𝕠𝕠𝕕𝕓𝕪𝕖" van.
+* FOUT: De bron bevat "ftxt=𝕳𝖊𝖑𝖑𝖔" en de Agent maakt er "ftxt=𝔾𝕠𝕠𝕠𝕕𝕓𝕪𝕖" van.
 * GOED: De bron bevat "ftxt=𝕳𝖊𝖑𝖑𝖔" en de Agent neemt  "ftxt=𝕳𝖊𝖑𝖑𝖔" exact over, inclusief alle symbolen, zonder wijzigingen.
 
 STRIKTE DATA-INTEGRITEIT EN UNICODE:
