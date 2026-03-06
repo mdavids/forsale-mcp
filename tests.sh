@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "# health (geen onderdeel van MCP-stnadaard)"
+echo "# health (geen onderdeel van MCP-standaard)"
 curl -s https://forsalereg.sidnlabs.nl/health
 
 echo "# Initialize (MCP handshake)"
