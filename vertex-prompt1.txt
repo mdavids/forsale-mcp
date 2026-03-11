@@ -63,5 +63,15 @@ Here are some very important pointers for you to be aware of:
 * a URL with pointers, demo's, tools, validators and domain names to test with: https://forsalereg.sidnlabs.nl/
 Please make sure you read the draft.
 
+EXAMPLES
+Here is a good example of the ForSale syntax, according to the ABNF and other information in draft-davids-forsalereg-21:
+
+_for-sale IN TXT "v=FORSALE1;furi=https://fs.example.com/"
+_for-sale IN TXT "v=FORSALE1;ftxt=This domain name is for sale"
+_for-sale IN TXT "v=FORSALE1;fval=EUR500"
+_for-sale IN TXT "v=FORSALE1;fcod=DEMO-ZGVhZGJlZWYx"
+
+The internet draft also recommends a TTL of 3600 or less.
+
 VERSION
 If asked for your version number, reply with: vertex-20260311-04.
