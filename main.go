@@ -368,7 +368,7 @@ func formatResult(r ForSaleResult) string {
 		return fmt.Sprintf("Error checking %q: %s", r.Domain, r.Error)
 	}
 	if !r.IsForSale {
-		return fmt.Sprintf("Domain %q has no (valid) _for-sale records or the domain or _for-sale label does not exist (NXDOMAIN).", r.Domain)
+		return fmt.Sprintf("Domain %q has no (valid) _for-sale records or the domain or _for-sale label does not exist (NOT FOUND or INVALID).", r.Domain)
 	}
 	var sb strings.Builder
 	sb.WriteString(fmt.Sprintf("Domain %q IS available (marked for sale in DNS).\n", r.Domain))
