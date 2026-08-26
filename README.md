@@ -1,5 +1,5 @@
 # forsale-mcp
-A Minimal Streamable HTTP MCP server for the _for-sale DNS TXT record method described in draft-davids-forsalereg
+A Minimal Streamable HTTP MCP server for the _for-sale DNS TXT record method described in [RFC10023](https://www.rfc-editor.org/rfc/rfc10023.html).
 
 ## Demo
 https://expert.bitfire.nl
